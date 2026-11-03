@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-label="Simplified schematic of RegistFormer, Stage 1 global CT synthesis and Stage 2 deformation-aware refinement">
+<defs>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M1,1 L11,6 L1,11 Z" fill="#46667a"/></marker>
+  <marker id="mint" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M1,1 L11,6 L1,11 Z" fill="#2a867f"/></marker>
+  <style>text{font-family:Arial,sans-serif;fill:#172a37}.title{font-size:33px;font-weight:700}.sub{font-size:18px;fill:#5f7280}.label{font-size:22px;font-weight:700}.small{font-size:19px}.tiny{font-size:16px}.arrow{stroke:#46667a;stroke-width:3.5;fill:none;marker-end:url(#arrow)}.dashed{stroke-dasharray:9 7}.card{fill:white;stroke:#d2dee6;stroke-width:2}.muted{fill:#f3f7fa}</style>
+</defs>
+<rect width="1200" height="620" fill="white"/>
+<text x="52" y="62" class="title">RegistFormer</text>
+<text x="52" y="94" class="sub">Reference-augmented pseudo-CT generation — simplified workflow</text>
+<rect x="35" y="125" width="500" height="420" rx="20" fill="#f1f7f4" stroke="#d3e7db" stroke-width="2"/>
+<rect x="555" y="125" width="610" height="420" rx="20" fill="#edf4fa" stroke="#d5e4f0" stroke-width="2"/>
+<text x="60" y="168" class="label">Stage 1 · Initial synthesis</text>
+<text x="580" y="168" class="label">Stage 2 · Local refinement</text>
+<rect x="74" y="227" width="130" height="116" rx="14" class="card"/><text x="139" y="264" text-anchor="middle" class="label">Input MR</text><text x="139" y="300" text-anchor="middle" class="small">structure</text>
+<rect x="74" y="378" width="130" height="103" rx="14" class="card"/><text x="139" y="413" text-anchor="middle" class="label">Ref. CT</text><text x="139" y="449" text-anchor="middle" class="small">contrast</text>
+<rect x="273" y="262" width="195" height="136" rx="14" fill="#d5ebe1" stroke="#9acdb5" stroke-width="2"/><text x="371" y="311" text-anchor="middle" class="label">Synthesis</text><text x="371" y="344" text-anchor="middle" class="label">network</text><text x="371" y="371" text-anchor="middle" class="small">(AdaIN)</text>
+<path class="arrow" d="M205 277 H267"/><path class="arrow" d="M205 421 H235 V362 H267"/>
+<rect x="595" y="239" width="160" height="110" rx="12" class="card"/><text x="675" y="274" text-anchor="middle" class="small">MR +</text><text x="675" y="302" text-anchor="middle" class="small">Synth-CT</text>
+<rect x="595" y="386" width="160" height="110" rx="12" class="card"/><text x="675" y="423" text-anchor="middle" class="small">Reference CT</text><text x="675" y="455" text-anchor="middle" class="tiny">moving features</text>
+<rect x="805" y="270" width="157" height="140" rx="13" fill="#d7e9f8" stroke="#90b9db" stroke-width="2"/><text x="883" y="317" text-anchor="middle" class="label">DACA</text><text x="883" y="347" text-anchor="middle" class="small">deformation-</text><text x="883" y="373" text-anchor="middle" class="small">aware attention</text>
+<rect x="1000" y="290" width="125" height="105" rx="12" fill="#d6eee7" stroke="#95cbbc" stroke-width="2"/><text x="1062" y="334" text-anchor="middle" class="label">Pseudo-</text><text x="1062" y="362" text-anchor="middle" class="label">CT</text>
+<path class="arrow" d="M470 315 H550 V294 H590"/><path class="arrow" d="M755 294 H798"/><path class="arrow" d="M755 437 H780 V370 H798"/><path class="arrow" d="M964 337 H993"/>
+<path d="M490 420 H546 V468 H589" fill="none" stroke="#2a867f" stroke-width="3.5" stroke-dasharray="9 6" marker-end="url(#mint)"/>
+<rect x="806" y="435" width="156" height="62" rx="11" fill="#ffffff" stroke="#94bfd9" stroke-width="2"/><text x="884" y="461" text-anchor="middle" class="small">Registration</text><text x="884" y="484" text-anchor="middle" class="tiny">network R</text>
+<path d="M883 435 V414" stroke="#46667a" stroke-width="3" stroke-dasharray="7 5" fill="none" marker-end="url(#arrow)"/>
+<path d="M755 464 H798" stroke="#46667a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<text x="548" y="511" class="tiny" text-anchor="middle" fill="#2a867f">CT guidance</text>
+<text x="60" y="522" class="sub">Global contrast transfer</text><text x="580" y="522" class="sub">Feature-level correspondence and reconstruction</text>
+<text x="1163" y="589" text-anchor="end" class="tiny" style="fill:#7c8c9c">Conceptual redraw · see original paper Fig. 2</text>
+</svg>
