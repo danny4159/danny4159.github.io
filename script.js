@@ -1,19 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
   const dialog = document.getElementById('figure-dialog');
-  const image = document.getElementById('figure-dialog-image');
-  const title = document.getElementById('figure-dialog-caption');
-  const original = document.getElementById('figure-dialog-open');
-  const close = document.getElementById('figure-dialog-close');
-  for (const button of document.querySelectorAll('.figure-button')) {
+  const enlarged = document.getElementById('figure-dialog-image');
+  const caption = document.getElementById('figure-dialog-caption');
+  const full = document.getElementById('figure-dialog-open');
+  const closer = document.getElementById('figure-dialog-close');
+  document.querySelectorAll('.figure-button').forEach((button) => {
     button.addEventListener('click', () => {
-      image.src = button.dataset.full;
-      image.alt = button.dataset.alt || 'Research figure';
-      title.textContent = button.dataset.caption || 'Research figure';
-      original.href = button.dataset.full;
-      if (dialog.showModal) dialog.showModal(); else window.open(button.dataset.full, '_blank', 'noopener');
+      const source = button.dataset.full;
+      if (!source) return;
+      enlarged.src = source;
+      enlarged.alt = button.dataset.alt || 'Publication figure';
+      caption.textContent = button.dataset.caption || 'Publication figure';
+      full.href = source;
+      if (typeof dialog.showModal === 'function') dialog.showModal();
+      else window.open(source, '_blank', 'noopener,noreferrer');
     });
-  }
-  close.addEventListener('click', () => dialog.close());
-  dialog.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); });
-  dialog.addEventListener('close', () => { image.removeAttribute('src'); });
+  });
+  closer.addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+  dialog.addEventListener('close', () => { enlarged.removeAttribute('src'); });
 });

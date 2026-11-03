@@ -1,60 +1,175 @@
-<!doctype html>
-<html lang="en"><head>
-<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Daniel Kim — Ph.D. student at Yonsei University. Medical image synthesis, multimodal image registration, and self-supervised learning." />
-<meta property="og:title" content="Daniel Kim | Medical Imaging Research"/><meta property="og:description" content="Research publications on medical image synthesis and alignment."/>
-<meta name="theme-color" content="#f8faf9"/><title>Daniel Kim | Medical Imaging Research</title>
-<link rel="icon" type="image/svg+xml" href="favicon.svg"/><link rel="stylesheet" href="styles.css"/>
-</head><body>
-<div class="layout">
-  <aside class="sidebar" aria-label="Profile and navigation">
-    <div class="sidebar-inner">
-      <a class="wordmark" href="#top" aria-label="Back to the top">DK<span>.</span></a>
-      <div class="profile">
-        <img class="portrait" src="assets/profile/daniel-kim.jpg" alt="Portrait of Daniel Kim" width="144" height="144"/>
-        <h1>Daniel Kim<span class="name-period">.</span></h1>
-        <p class="role">Ph.D. Student</p>
-        <p class="affiliation">Electrical and Electronic Engineering<br/>Yonsei University<br/>Seoul, South Korea</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daniel Kim | Medical Imaging Research</title>
+  <meta name="description" content="Daniel Kim — medical image synthesis, multimodal registration, and self-supervised learning. Publications at JBHI, WACV, ECCV, CMIG and ISMRM." />
+  <meta property="og:title" content="Daniel Kim | Medical Imaging Research" />
+  <meta property="og:description" content="Research on medical image synthesis and alignment." />
+  <meta name="theme-color" content="#f7faf8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar" aria-label="Profile and navigation">
+      <div class="sidebar-inner">
+        <a class="wordmark" href="#top" aria-label="Go to the top">DK<span>.</span></a>
+        <div class="profile">
+          <img src="assets/profile/daniel-kim.jpg" width="108" height="108" alt="Portrait of Daniel Kim" class="portrait" />
+          <h1>Daniel Kim<span class="name-period">.</span></h1>
+          <p class="role">Ph.D. Student</p>
+          <p class="affiliation">Electrical and Electronic Engineering<br />Yonsei University<br />Seoul, South Korea</p>
+        </div>
+        <nav class="sidebar-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#research">Research interests</a>
+          <a href="#publications">Publications</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="sidebar-social">
+            <a href="https://github.com/danny4159" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://scholar.google.co.kr/citations?user=ospUGbQAAAAJ&amp;hl=ko" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
+            <a href="mailto:danny4159@yonsei.ac.kr">Email <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="copyright">© 2026 Daniel Kim</p>
+        </div>
       </div>
-      <nav class="sidebar-nav" aria-label="Site navigation">
-        <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#abstracts">Conference Abstracts</a><a href="#contact">Contact</a>
-      </nav>
-      <div class="sidebar-bottom"><div class="sidebar-social"><a href="https://github.com/danny4159" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="mailto:danny4159@yonsei.ac.kr">Email ↗</a></div><span class="copyright">© 2026 Daniel Kim</span></div>
+    </aside>
+
+    <main id="top">
+      <div class="mobile-header">
+        <div class="mobile-identity"><img src="assets/profile/daniel-kim.jpg" width="38" height="38" alt="Portrait of Daniel Kim" /><a href="#top">Daniel Kim<span>.</span></a></div>
+        <a href="#publications">Publications <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="main-content">
+        <header id="about" class="intro">
+          <p class="section-kicker">ABOUT</p>
+          <h2>Medical image synthesis<br />and <em>alignment.</em></h2>
+          <p class="intro-copy">I develop deep learning methods for medical image synthesis and registration, with a focus on imperfect alignment, image corruptions, and limited annotations.</p>
+        </header>
+        <section id="research" class="research-section" aria-labelledby="research-title">
+          <p class="section-kicker">RESEARCH</p>
+          <h2 id="research-title">Research interests</h2>
+          <p class="interest-text">Medical Image Synthesis <span>·</span> Multimodal Image Registration <span>·</span> Self-Supervised Learning <span>·</span> Lesion Synthesis &amp; Augmentation</p>
+        </section>
+        <section id="publications" class="pub-section" aria-labelledby="pub-title">
+          <div class="section-heading"><p class="section-kicker">RESEARCH OUTPUT</p><h2 id="pub-title">Publications</h2></div>
+          <div class="pub-group" id="first-author">
+            <div class="group-heading"><h3>First-Author Work</h3><span>04</span></div>
+            <article class="publication">
+    <div class="pub-body">
+      <div class="pub-meta"><span class="venue-badge"><span class="venue-acronym">JBHI</span><span class="venue-year">2026</span></span><span class="impact-note" title="2025 Journal Impact Factor (2026 JCR release)">IF 7.7</span></div>
+      <h4><a href="https://doi.org/10.1109/JBHI.2025.3642431" target="_blank" rel="noopener noreferrer">Cross-Modality Image Registration via Generating Aligned Image Using Reference-Augmented Framework</a></h4>
+      <p class="authors"><strong>Daniel Kim</strong>, Abdullah Shazly, Mohammed A. Al-Masni, Dong-Hyun Kim, and Kanghyun Ryu</p>
+      <p class="pub-summary">Reference-augmented synthesis for robust MR–CT image alignment (RbG).</p>
+      <div class="pub-links"><a href="https://doi.org/10.1109/JBHI.2025.3642431" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/danny4159/RbG_framework" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div>
     </div>
-  </aside>
-  <main id="top">
-    <div class="mobile-header"><div class="mobile-identity"><img src="assets/profile/daniel-kim.jpg" width="38" height="38" alt="Portrait of Daniel Kim"/><a href="#top">Daniel Kim<span>.</span></a></div><a href="#publications">Publications ↗</a></div>
-    <div class="main-content">
-      <header class="intro" id="about"><p class="section-kicker">ABOUT</p>
-        <h2>Medical image synthesis<br/>and <em>alignment.</em></h2>
-        <p class="intro-copy">I study deep learning for medical image registration and synthesis, especially when paired images are misaligned, degraded, or sparsely labeled.</p>
-        <div class="intro-links"><a href="#publications" class="primary-link">Publications ↗</a><a href="https://github.com/danny4159" class="secondary-link" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
-      </header>
-      <section id="research" aria-labelledby="research-heading" class="research-section">
-        <div class="section-heading"><p class="section-kicker">RESEARCH INTERESTS</p><h2 id="research-heading">Research interests</h2></div>
-        <div class="interests" aria-label="Research areas"><span>Medical Image Synthesis</span><span>Medical Image Registration</span><span>Self-Supervised Learning</span><span>Lesion Synthesis &amp; Data Augmentation</span></div>
-      </section>
-      <section id="publications" aria-labelledby="publications-heading" class="pub-section">
-        <div class="section-heading"><p class="section-kicker">PUBLICATIONS</p><h2 id="publications-heading">Publications</h2></div>
-        <div class="group-heading"><h3>Journal Articles</h3><span>02</span></div>
-        <article class="publication"><div class="pub-side"><span class="pub-year">2026</span><span class="pub-type">JOURNAL</span></div><div class="pub-content"><div class="pub-body"><h4><a href="https://doi.org/10.1109/JBHI.2025.3642431" target="_blank" rel="noopener noreferrer">Cross-Modality Image Registration via Generating Aligned Image Using Reference-Augmented Framework</a></h4><p class="authors"><strong>Daniel Kim</strong>, Abdullah Shazly, Mohammed A. Al-Masni, Dong-Hyun Kim, and Kanghyun Ryu</p><p class="venue"><em>IEEE Journal of Biomedical and Health Informatics</em>, 30(7): 6119–6132, 2026</p><p class="pub-summary">Register by Generation (RbG): two-stage reference-guided image synthesis for multimodal registration.</p><div class="pub-links"><a href="https://doi.org/10.1109/JBHI.2025.3642431" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/danny4159/RbG_framework" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div></div><div class="figure-wrap"><button type="button" class="figure-button" data-full="assets/figures/jbhi-rbg-framework.png" data-alt="Register by Generation (RbG) framework — stages 1 and 2 with PAdaIN and DACA" data-caption="RbG framework · Fig. 1" aria-label="Enlarge figure: RbG framework · Fig. 1"><img src="assets/figures/jbhi-rbg-framework-thumb.webp" alt="Register by Generation (RbG) framework — stages 1 and 2 with PAdaIN and DACA" loading="lazy" decoding="async"/><span class="figure-action" aria-hidden="true">↗ Enlarge</span></button><p class="figure-caption">RbG framework · Fig. 1</p></div></div></article><article class="publication"><div class="pub-side"><span class="pub-year">2025</span><span class="pub-type">JOURNAL</span></div><div class="pub-content"><div class="pub-body"><h4><a href="https://doi.org/10.1016/j.compmedimag.2025.102506" target="_blank" rel="noopener noreferrer">Meta-learning guidance for robust medical image synthesis: Addressing the real-world misalignment and corruptions</a></h4><p class="authors">Jaehun Lee, <strong>Daniel Kim</strong>, Taehun Kim, Mohammed A. Al-Masni, Yoseob Han, Dong-Hyun Kim, and Kanghyun Ryu</p><p class="venue"><em>Computerized Medical Imaging and Graphics</em>, 121: 102506, 2025</p><p class="pub-summary">Meta-learning reweighting for medical image synthesis with misalignment and corruptions.</p><div class="pub-links"><a href="https://doi.org/10.1016/j.compmedimag.2025.102506" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/KHRyu8985/meta-reweight-misalign" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div></div><div class="figure-wrap"><button type="button" class="figure-button" data-full="assets/figures/ismrm2024-meta-learning.png" data-alt="Computation graph for meta-learning based reweighting (related ISMRM 2024 figure)" data-caption="Meta-learning reweighting · related ISMRM 2024 diagram" aria-label="Enlarge figure: Meta-learning reweighting · related ISMRM 2024 diagram"><img src="assets/figures/ismrm2024-meta-learning-thumb.webp" alt="Computation graph for meta-learning based reweighting (related ISMRM 2024 figure)" loading="lazy" decoding="async"/><span class="figure-action" aria-hidden="true">↗ Enlarge</span></button><p class="figure-caption">Meta-learning reweighting · related ISMRM 2024 diagram</p></div></div></article>
-        <div class="group-heading group-heading-spaced"><h3>Conference Papers</h3><span>01</span></div><article class="publication"><div class="pub-side"><span class="pub-year">2025</span><span class="pub-type">CONFERENCE</span></div><div class="pub-content"><div class="pub-body"><p class="pub-note">Oral Presentation · Top ~8.3% of submissions</p><h4><a href="https://openaccess.thecvf.com/content/WACV2025/html/Kim_Improving_Pelvic_MR-CT_Image_Alignment_with_Self-Supervised_Reference-Augmented_Pseudo-CT_Generation_WACV_2025_paper.html" target="_blank" rel="noopener noreferrer">Improving Pelvic MR-CT Image Alignment with Self-Supervised Reference-Augmented Pseudo-CT Generation Framework</a></h4><p class="authors"><strong>Daniel Kim</strong>, Mohammed A. Al-Masni, Jaehun Lee, Dong-Hyun Kim, and Kanghyun Ryu</p><p class="venue"><em>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)</em>, 2025</p><p class="pub-summary">RegistFormer: reference-guided pseudo-CT synthesis with deformation-aware cross-attention.</p><div class="pub-links"><a href="https://openaccess.thecvf.com/content/WACV2025/html/Kim_Improving_Pelvic_MR-CT_Image_Alignment_with_Self-Supervised_Reference-Augmented_Pseudo-CT_Generation_WACV_2025_paper.html" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a><a href="https://openaccess.thecvf.com/content/WACV2025/papers/Kim_Improving_Pelvic_MR-CT_Image_Alignment_with_Self-Supervised_Reference-Augmented_Pseudo-CT_Generation_WACV_2025_paper.pdf#page=3" target="_blank" rel="noopener noreferrer">PDF / Fig. 2 <span aria-hidden="true">↗</span></a><a href="https://github.com/danny4159/RegistFormer" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div></div><div class="figure-wrap"><button type="button" class="figure-button" data-full="assets/figures/wacv-registformer-schematic.svg" data-alt="Simplified schematic of the RegistFormer two-stage framework" data-caption="RegistFormer · simplified schematic (see paper Fig. 2)" aria-label="Enlarge figure: RegistFormer · simplified schematic (see paper Fig. 2)"><img src="assets/figures/wacv-registformer-schematic.svg" alt="Simplified schematic of the RegistFormer two-stage framework" loading="lazy" decoding="async"/><span class="figure-action" aria-hidden="true">↗ Enlarge</span></button><p class="figure-caption">RegistFormer · simplified schematic (see paper Fig. 2)</p></div></div></article>
-      </section>
-      <section id="abstracts" aria-labelledby="abstracts-heading" class="abstract-section">
-        <div class="section-heading"><p class="section-kicker">INTERNATIONAL CONFERENCES</p><h2 id="abstracts-heading">Conference Abstracts</h2><p class="section-description">ISMRM Annual Meeting. Both PDFs include enlarged figures and open directly in your browser.</p></div>
-        <article class="publication"><div class="pub-side"><span class="pub-year">2024</span><span class="pub-type">ISMRM ABSTRACT</span></div><div class="pub-content"><div class="pub-body"><h4><a href="https://archive.ismrm.org/2024/2234.html" target="_blank" rel="noopener noreferrer">Meta-Learning Guided Pelvis MR to CT Translation: Addressing Cross-Modality Misalignments</a></h4><p class="authors"><strong>Daniel Kim</strong>, Jae-Hun Lee, Yoseob Han, Kanghyun Ryu, and Dong-Hyun Kim</p><p class="venue"><em>ISMRM Annual Meeting</em>, Singapore, 2024 · Abstract #2234</p><p class="pub-summary">Meta-learning guided MR-to-CT translation despite imperfect image pairing.</p><div class="pub-links"><a href="https://archive.ismrm.org/2024/2234.html" target="_blank" rel="noopener noreferrer">Abstract <span aria-hidden="true">↗</span></a><a href="assets/papers/ISMRM_2024_Abstract_Enlarged_Figures.pdf" target="_blank" rel="noopener noreferrer">PDF <span aria-hidden="true">↗</span></a></div></div><div class="figure-wrap"><button type="button" class="figure-button" data-full="assets/figures/ismrm2024-overview.png" data-alt="Meta-learning based MR to CT synthesis overview including network architecture and reweighting" data-caption="MR → CT synthesis · Fig. 1" aria-label="Enlarge figure: MR → CT synthesis · Fig. 1"><img src="assets/figures/ismrm2024-overview-thumb.webp" alt="Meta-learning based MR to CT synthesis overview including network architecture and reweighting" loading="lazy" decoding="async"/><span class="figure-action" aria-hidden="true">↗ Enlarge</span></button><p class="figure-caption">MR → CT synthesis · Fig. 1</p></div></div></article><article class="publication"><div class="pub-side"><span class="pub-year">2023</span><span class="pub-type">ISMRM ABSTRACT</span></div><div class="pub-content"><div class="pub-body"><h4><a href="https://archive.ismrm.org/2023/5041.html" target="_blank" rel="noopener noreferrer">3D Lesion Generation Model considering Anatomic Localization to Improve Object Detection in Limited Lacune Data</a></h4><p class="authors"><strong>Daniel Kim</strong>, Jae-Hun Lee, Mohammed A. Al-Masni, Jun-ho Kim, Yoonseok Choi, Eun-Gyu Ha, SunYoung Jung, Young Noh, and Dong-Hyun Kim</p><p class="venue"><em>ISMRM Annual Meeting</em>, Toronto, 2023 · Abstract #5041</p><p class="pub-summary">Anatomy-guided 3D lacune synthesis for augmenting lesion detection training data.</p><div class="pub-links"><a href="https://archive.ismrm.org/2023/5041.html" target="_blank" rel="noopener noreferrer">Abstract <span aria-hidden="true">↗</span></a><a href="assets/papers/ISMRM_2023_Abstract_Enlarged_Figures.pdf" target="_blank" rel="noopener noreferrer">PDF <span aria-hidden="true">↗</span></a></div></div><div class="figure-wrap"><button type="button" class="figure-button" data-full="assets/figures/ismrm2023-lacune-framework.png" data-alt="3D lacune generation and augmentation framework with anatomical localization" data-caption="Lacune synthesis pipeline · Fig. 1" aria-label="Enlarge figure: Lacune synthesis pipeline · Fig. 1"><img src="assets/figures/ismrm2023-lacune-framework-thumb.webp" alt="3D lacune generation and augmentation framework with anatomical localization" loading="lazy" decoding="async"/><span class="figure-action" aria-hidden="true">↗ Enlarge</span></button><p class="figure-caption">Lacune synthesis pipeline · Fig. 1</p></div></div></article>
-      </section>
-      <section id="contact" aria-labelledby="contact-heading" class="contact-section">
-        <div class="section-heading"><p class="section-kicker">CONTACT</p><h2 id="contact-heading">Contact</h2></div>
-        <a class="email-link" href="mailto:danny4159@yonsei.ac.kr">danny4159@yonsei.ac.kr ↗</a>
-      </section>
-      <footer><span>Daniel Kim · Yonsei University</span><span>Updated Nov 2026</span></footer>
-    </div>
-  </main>
+    <div class="figure-wrap">
+  <button class="figure-button" type="button" data-full="assets/figures/jbhi-rbg-framework.png" data-caption="RbG · proposed framework" data-alt="Two-stage RbG reference-augmented registration framework" aria-label="Expand RbG · proposed framework">
+    <img src="assets/figures/jbhi-rbg-framework-thumb.webp" loading="lazy" decoding="async" alt="Two-stage RbG reference-augmented registration framework" />
+    <span class="figure-action" aria-hidden="true">View figure <span>↗</span></span>
+  </button>
+  <p class="figure-caption">RbG · proposed framework <span aria-hidden="true">↗</span></p>
 </div>
-<dialog id="figure-dialog" class="figure-dialog" aria-label="Enlarged research figure">
-  <div class="dialog-bar"><p id="figure-dialog-caption"></p><div><a id="figure-dialog-open" href="#" target="_blank" rel="noopener noreferrer">Open full image ↗</a><button id="figure-dialog-close" type="button" aria-label="Close image">✕</button></div></div>
-  <div class="dialog-image-shell"><img id="figure-dialog-image" alt=""/></div>
-</dialog>
-<script src="script.js" defer></script>
-</body></html>
+  </article><article class="publication">
+    <div class="pub-body">
+      <div class="pub-meta"><span class="venue-badge"><span class="venue-acronym">WACV</span><span class="venue-year">2025</span></span><span class="award-note">Oral · Top ~8.3%</span></div>
+      <h4><a href="https://openaccess.thecvf.com/content/WACV2025/html/Kim_Improving_Pelvic_MR-CT_Image_Alignment_with_Self-Supervised_Reference-Augmented_Pseudo-CT_Generation_WACV_2025_paper.html" target="_blank" rel="noopener noreferrer">Improving Pelvic MR-CT Image Alignment with Self-Supervised Reference-Augmented Pseudo-CT Generation Framework</a></h4>
+      <p class="authors"><strong>Daniel Kim</strong>, Mohammed A. Al-Masni, Jaehun Lee, Dong-Hyun Kim, and Kanghyun Ryu</p>
+      <p class="pub-summary">RegistFormer: reference-guided pseudo-CT synthesis with deformation-aware cross-attention.</p>
+      <div class="pub-links"><a href="https://openaccess.thecvf.com/content/WACV2025/html/Kim_Improving_Pelvic_MR-CT_Image_Alignment_with_Self-Supervised_Reference-Augmented_Pseudo-CT_Generation_WACV_2025_paper.html" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a><a href="https://openaccess.thecvf.com/content/WACV2025/papers/Kim_Improving_Pelvic_MR-CT_Image_Alignment_with_Self-Supervised_Reference-Augmented_Pseudo-CT_Generation_WACV_2025_paper.pdf" target="_blank" rel="noopener noreferrer">PDF <span aria-hidden="true">↗</span></a><a href="https://github.com/danny4159/RegistFormer" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <div class="figure-wrap">
+  <button class="figure-button" type="button" data-full="assets/figures/wacv-registformer-fig2.png" data-caption="RegistFormer · Fig. 2" data-alt="Original WACV Fig. 2 showing RegistFormer architecture and training objectives" aria-label="Expand RegistFormer · Fig. 2">
+    <img src="assets/figures/wacv-registformer-fig2-thumb.webp" loading="lazy" decoding="async" alt="Original WACV Fig. 2 showing RegistFormer architecture and training objectives" />
+    <span class="figure-action" aria-hidden="true">View figure <span>↗</span></span>
+  </button>
+  <p class="figure-caption">RegistFormer · Fig. 2 <span aria-hidden="true">↗</span></p>
+</div>
+  </article><article class="publication">
+    <div class="pub-body">
+      <div class="pub-meta"><span class="venue-badge"><span class="venue-acronym">ISMRM</span><span class="venue-year">2024</span></span><span class="abstract-note">Conference abstract</span></div>
+      <h4><a href="https://archive.ismrm.org/2024/2234.html" target="_blank" rel="noopener noreferrer">Meta-Learning Guided Pelvis MR to CT Translation: Addressing Cross-Modality Misalignments</a></h4>
+      <p class="authors"><strong>Daniel Kim</strong>, Jae-Hun Lee, Yoseob Han, Kanghyun Ryu, and Dong-Hyun Kim</p>
+      <p class="pub-summary">Meta-learning reweighting to reduce the effect of misaligned MR–CT training pairs.</p>
+      <div class="pub-links"><a href="https://archive.ismrm.org/2024/2234.html" target="_blank" rel="noopener noreferrer">Abstract <span aria-hidden="true">↗</span></a><a href="assets/papers/ISMRM_2024_Abstract_Enlarged_Figures.pdf" target="_blank" rel="noopener noreferrer">PDF <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <div class="figure-wrap">
+  <button class="figure-button" type="button" data-full="assets/figures/ismrm2024-meta-learning.png" data-caption="ISMRM 2024 · Fig. 2" data-alt="Meta-learning reweighting computation graph and learned weight-map visualization" aria-label="Expand ISMRM 2024 · Fig. 2">
+    <img src="assets/figures/ismrm2024-meta-learning-thumb.webp" loading="lazy" decoding="async" alt="Meta-learning reweighting computation graph and learned weight-map visualization" />
+    <span class="figure-action" aria-hidden="true">View figure <span>↗</span></span>
+  </button>
+  <p class="figure-caption">ISMRM 2024 · Fig. 2 <span aria-hidden="true">↗</span></p>
+</div>
+  </article><article class="publication">
+    <div class="pub-body">
+      <div class="pub-meta"><span class="venue-badge"><span class="venue-acronym">ISMRM</span><span class="venue-year">2023</span></span><span class="abstract-note">Conference abstract</span></div>
+      <h4><a href="https://archive.ismrm.org/2023/5041.html" target="_blank" rel="noopener noreferrer">3D Lesion Generation Model considering Anatomic Localization to Improve Object Detection in Limited Lacune Data</a></h4>
+      <p class="authors"><strong>Daniel Kim</strong>, Jae-Hun Lee, Mohammed A. Al-Masni, Jun-ho Kim, Yoonseok Choi, Eun-Gyu Ha, SunYoung Jung, Young Noh, and Dong-Hyun Kim</p>
+      <p class="pub-summary">3D lacune generation and anatomically guided augmentation for lesion detection.</p>
+      <div class="pub-links"><a href="https://archive.ismrm.org/2023/5041.html" target="_blank" rel="noopener noreferrer">Abstract <span aria-hidden="true">↗</span></a><a href="assets/papers/ISMRM_2023_Abstract_Enlarged_Figures.pdf" target="_blank" rel="noopener noreferrer">PDF <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <div class="figure-wrap">
+  <button class="figure-button" type="button" data-full="assets/figures/ismrm2023-lacune-framework.png" data-caption="ISMRM 2023 · Fig. 1" data-alt="3D-DCGAN lacune synthesis and anatomically aware lesion augmentation pipeline" aria-label="Expand ISMRM 2023 · Fig. 1">
+    <img src="assets/figures/ismrm2023-lacune-framework-thumb.webp" loading="lazy" decoding="async" alt="3D-DCGAN lacune synthesis and anatomically aware lesion augmentation pipeline" />
+    <span class="figure-action" aria-hidden="true">View figure <span>↗</span></span>
+  </button>
+  <p class="figure-caption">ISMRM 2023 · Fig. 1 <span aria-hidden="true">↗</span></p>
+</div>
+  </article>
+          </div>
+          <div class="pub-group second-group" id="coauthored">
+            <div class="group-heading"><h3>Co-authored Work</h3><span>02</span></div>
+            <article class="publication">
+    <div class="pub-body">
+      <div class="pub-meta"><span class="venue-badge"><span class="venue-acronym">ECCV</span><span class="venue-year">2026</span></span></div>
+      <h4><a href="https://doi.org/10.1007/978-3-032-37035-8_24" target="_blank" rel="noopener noreferrer">DRIFT: Difficulty-Aware Rectified Flows for Through-Plane MRI Super-Resolution</a></h4>
+      <p class="authors">Yoonseok Choi, Eun-Gyu Ha, <strong>Daniel Kim</strong>, Mohammed A. Al-Masni, Ming-Hsuan Yang, and Dong-Hyun Kim</p>
+      <p class="pub-summary">Difficulty-aware rectified flow and adaptive inference for through-plane MRI super-resolution.</p>
+      <div class="pub-links"><a href="https://doi.org/10.1007/978-3-032-37035-8_24" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a><a href="https://yoonseokchoi-ai.github.io/drift-eccv2026/" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a><a href="https://github.com/yoonseokchoi-ai/DRIFT" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <div class="figure-wrap">
+  <button class="figure-button" type="button" data-full="assets/figures/drift-overview.png" data-caption="DRIFT · method overview" data-alt="Two-stage MRI super-resolution with Structural Manifold Projection and Adaptive Integration Scheduler" aria-label="Expand DRIFT · method overview">
+    <img src="assets/figures/drift-overview-thumb.webp" loading="lazy" decoding="async" alt="Two-stage MRI super-resolution with Structural Manifold Projection and Adaptive Integration Scheduler" />
+    <span class="figure-action" aria-hidden="true">View figure <span>↗</span></span>
+  </button>
+  <p class="figure-caption">DRIFT · method overview <span aria-hidden="true">↗</span></p>
+</div>
+  </article><article class="publication">
+    <div class="pub-body">
+      <div class="pub-meta"><span class="venue-badge"><span class="venue-acronym">CMIG</span><span class="venue-year">2025</span></span><span class="impact-note" title="2025 Journal Impact Factor (2026 JCR release)">IF 5.5</span></div>
+      <h4><a href="https://doi.org/10.1016/j.compmedimag.2025.102506" target="_blank" rel="noopener noreferrer">Meta-Learning Guidance for Robust Medical Image Synthesis: Addressing the Real-World Misalignment and Corruptions</a></h4>
+      <p class="authors">Jaehun Lee, <strong>Daniel Kim</strong>, Taehun Kim, Mohammed A. Al-Masni, Yoseob Han, Dong-Hyun Kim, and Kanghyun Ryu</p>
+      <p class="pub-summary">Meta-learning-based spatial reweighting for robust medical image synthesis.</p>
+      <div class="pub-links"><a href="https://doi.org/10.1016/j.compmedimag.2025.102506" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/KHRyu8985/meta-reweight-misalign" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <div class="figure-wrap">
+  <button class="figure-button" type="button" data-full="assets/figures/ismrm2024-meta-learning.png" data-caption="Meta-learning · related ISMRM schematic" data-alt="Related meta-learning computation graph from ISMRM 2024, showing reweighting of misaligned training data" aria-label="Expand Meta-learning · related ISMRM schematic">
+    <img src="assets/figures/ismrm2024-meta-learning-thumb.webp" loading="lazy" decoding="async" alt="Related meta-learning computation graph from ISMRM 2024, showing reweighting of misaligned training data" />
+    <span class="figure-action" aria-hidden="true">View figure <span>↗</span></span>
+  </button>
+  <p class="figure-caption">Meta-learning · related ISMRM schematic <span aria-hidden="true">↗</span></p>
+</div>
+  </article>
+          </div>
+          <p class="impact-footer">IF = 2025 Journal Impact Factor (released in 2026). Conference abstracts are labeled separately.</p>
+        </section>
+        <section id="contact" class="contact-section" aria-labelledby="contact-title">
+          <p class="section-kicker">CONTACT</p>
+          <h2 id="contact-title">Get in touch.</h2>
+          <a class="email-link" href="mailto:danny4159@yonsei.ac.kr">danny4159@yonsei.ac.kr <span aria-hidden="true">↗</span></a>
+        </section>
+        <footer><span>Daniel Kim · Yonsei University</span><span>Updated Nov 2026</span></footer>
+      </div>
+    </main>
+  </div>
+  <dialog class="figure-dialog" id="figure-dialog" aria-label="Expanded publication figure">
+    <div class="dialog-bar"><p id="figure-dialog-caption">Research figure</p><div class="dialog-actions"><a id="figure-dialog-open" href="#" target="_blank" rel="noopener noreferrer">Open full resolution <span aria-hidden="true">↗</span></a><button id="figure-dialog-close" type="button" aria-label="Close expanded image">✕</button></div></div>
+    <div class="dialog-image-shell"><img id="figure-dialog-image" alt="" /></div>
+  </dialog>
+</body>
+</html>
